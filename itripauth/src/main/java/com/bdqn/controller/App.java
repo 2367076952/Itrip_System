@@ -40,8 +40,6 @@ public class App {
 
     }
 
-
-
     public static MimeMessage createMimeMessage(String code,Session session, String sendMail, String receiveMail)
             throws Exception {
         // 1. 创建一封邮件
