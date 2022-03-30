@@ -38,7 +38,7 @@ public class HotelController {
 
     @RequestMapping("/queryhotelfeature")
     @ResponseBody
-    public Dto queryHotelFeature() throws Exception {
+    public Dto queryHotelFeature() {
         List<ItripLabelDic> list = mapper2.queryHotelFeature();
         if(list.size() == 0){
             return DtoUtil.returnFail("系统异常，获取失败","10205");

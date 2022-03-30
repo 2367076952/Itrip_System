@@ -12,7 +12,7 @@ import java.util.List;
  * @since 2022-02-28 15:33:56
  */
 public interface ItripAreaDicMapper {
-
+    public List<ItripAreaDic> getListBypPid(@Param("id") String id);
 
     List<ItripAreaDic> queryHotHotel(@Param("type") int type);
 
